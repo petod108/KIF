@@ -12,6 +12,11 @@
 
 @interface UIAutomationHelper : NSObject
 
++ (NSInteger)getWindowsCount;
++ (void)waitForSystemAlertWindowCount:(NSInteger)count;
 + (void)acknowledgeSystemAlert;
++ (void)acknowledgeSystemAlertAndNewAlert:(BOOL)createOtherAlert;
++ (void)acknowledgeiTunesWindowAndNewAlert:(BOOL)createOtherAlert windowCount:(NSInteger)count;
++ (void)acknowledgeiTunesWindowAndNewAlert:(BOOL)createOtherAlert username:(NSString*)username password:(NSString*)password windowCount:(NSInteger)count;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <KIF/KIF.h>
+#import <KIF/UIAutomationHelper.h>
 
 @interface SystemAlertTests : KIFTestCase
 
@@ -26,18 +27,18 @@
 
 - (void)testAuthorizingLocationServices {
     [tester tapViewWithAccessibilityLabel:@"Location Services"];
-    [tester acknowledgeSystemAlert];
+    [UIAutomationHelper acknowledgeSystemAlert];
 }
 
 - (void)testAuthorizingPhotosAccess {
     [tester tapViewWithAccessibilityLabel:@"Photos"];
-    [tester acknowledgeSystemAlert];
+    [UIAutomationHelper acknowledgeSystemAlert];
     [tester tapViewWithAccessibilityLabel:@"Cancel"];
 }
 
 - (void)testNotificationScheduling {
     [tester tapViewWithAccessibilityLabel:@"Notifications"];
-    [tester acknowledgeSystemAlert];
+    [UIAutomationHelper acknowledgeSystemAlert];
 }
 
 @end

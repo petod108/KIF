@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0510"
+   LastUpgradeVersion = "0630"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EABD46791857A0C700A5F081"
-               BuildableName = "libKIF-XCUnit.a"
-               BlueprintName = "KIF-XCUnit"
+               BlueprintIdentifier = "EB60ECC0177F8C83005A041A"
+               BuildableName = "Test Host.app"
+               BlueprintName = "Test Host"
                ReferencedContainer = "container:KIF.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -26,15 +26,15 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
-      buildConfiguration = "Coverage">
+      buildConfiguration = "Debug">
       <Testables>
          <TestableReference
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "EABD46AD1857A0F300A5F081"
-               BuildableName = "KIF Tests - XCTest.xctest"
-               BlueprintName = "KIF Tests"
+               BlueprintIdentifier = "EB60ECEA177F8DB3005A041A"
+               BuildableName = "KIF Tests-OCUnit.octest"
+               BlueprintName = "KIF Tests-OCUnit"
                ReferencedContainer = "container:KIF.xcodeproj">
             </BuildableReference>
          </TestableReference>
@@ -42,9 +42,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EABD46791857A0C700A5F081"
-            BuildableName = "libKIF-XCUnit.a"
-            BlueprintName = "KIF-XCUnit"
+            BlueprintIdentifier = "EB60ECC0177F8C83005A041A"
+            BuildableName = "Test Host.app"
+            BlueprintName = "Test Host"
             ReferencedContainer = "container:KIF.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -58,15 +58,16 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "EABD46791857A0C700A5F081"
-            BuildableName = "libKIF-XCUnit.a"
-            BlueprintName = "KIF-XCUnit"
+            BlueprintIdentifier = "EB60ECC0177F8C83005A041A"
+            BuildableName = "Test Host.app"
+            BlueprintName = "Test Host"
             ReferencedContainer = "container:KIF.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -76,6 +77,16 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "EB60ECC0177F8C83005A041A"
+            BuildableName = "Test Host.app"
+            BlueprintName = "Test Host"
+            ReferencedContainer = "container:KIF.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

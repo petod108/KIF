@@ -7,6 +7,7 @@
 //
 
 #import <KIF/KIF.h>
+#import "UIAutomationHelper.h"
 
 @interface SpecificControlTests : KIFTestCase
 @end
@@ -45,7 +46,7 @@
 
 - (void)testPickingAPhoto {
     [tester tapViewWithAccessibilityLabel:@"Photos"];
-    [tester acknowledgeSystemAlert];
+    [UIAutomationHelper  acknowledgeSystemAlert];
     [tester waitForTimeInterval:0.5f]; // Wait for view to stabilize
 
     NSOperatingSystemVersion iOS8 = {8, 0, 0};

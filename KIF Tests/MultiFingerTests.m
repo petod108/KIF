@@ -51,7 +51,7 @@
 
     [scrollView twoFingerTapAtPoint:CGPointMake(CGRectGetMidX(scrollView.bounds), CGRectGetMidY(scrollView.bounds))];
 
-    __KIFAssertEqual(self.twoFingerTapSuccess, YES);
+    __KIFAssertEqual(self.twoFingerTapSuccess, YES, @"");
     [scrollView removeGestureRecognizer:twoFingerTapRecognizer];
 }
 
@@ -72,7 +72,7 @@
     CGPoint endPoint = CGPointMake(startPoint.x, startPoint.y + offset);
     [scrollView twoFingerPanFromPoint:startPoint toPoint:endPoint steps:10];
 
-    __KIFAssertEqual(self.twoFingerPanSuccess, YES);
+    __KIFAssertEqual(self.twoFingerPanSuccess, YES, @"");
     [scrollView removeGestureRecognizer:panGestureRecognizer];
 }
 
@@ -92,7 +92,7 @@
     CGPoint startPoint = CGPointMake(CGRectGetMidX(scrollView.bounds), CGRectGetMidY(scrollView.bounds));
     [scrollView zoomAtPoint:startPoint distance:distance steps:10];
 
-    __KIFAssertEqual(self.zoomSuccess, YES);
+    __KIFAssertEqual(self.zoomSuccess, YES, @"");
     [scrollView removeGestureRecognizer:pinchRecognizer];
 }
 
@@ -132,7 +132,7 @@
     // check we have rotated to within some small threshold of the target rotation amount
     // 0.2 radians is ~12 degrees
     BOOL withinThreshold = (self.latestRotation - KIFDegreesToRadians(targetRotationInDegrees)) < 0.2;
-    __KIFAssertEqual(withinThreshold, YES);
+    __KIFAssertEqual(withinThreshold, YES, @"");
 }
 
 - (void)rotated:(UIRotationGestureRecognizer *)recognizer {
